@@ -1,0 +1,8 @@
+sudo: required
+language: C++
+addons:
+  apt:
+    packages:
+      - docker
+script:
+  - docker build --tag hdl_graph_slam ./docker/
