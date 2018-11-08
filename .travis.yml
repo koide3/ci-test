@@ -1,8 +1,8 @@
 sudo: required
 language: C++
-addons:
-  apt:
-    packages:
-      - docker
+services:
+  - docker
 script:
-  - docker build --tag hdl_graph_slam ./docker/
+  - docker build --tag hdl_graph_slam_kinetic ./docker/kinetic
+  - docker run hdl_graph_slam_kinetic roslaunch hdl_graph_slam hdl_graph_slam.launch
+#  - docker build --tag hdl_graph_slam_melodic ./docker/melodic
