@@ -13,4 +13,4 @@ services:
   - docker
 
 script:
-  - docker build -f docker/$ROS_DISTRO/Dockerfile .
+  - docker build -f ./docker/$ROS_DISTRO/Dockerfile .
