@@ -3,3 +3,7 @@
 #
 # The 'wstool' utility is the preferred way of adding elements to this file. To
 # add all repositories from an existing workspace, you can use `wstool scrape`.
+
+- git:
+    local-name: ndt_omp
+    uri: https://github.com/koide3/ndt_omp.git
