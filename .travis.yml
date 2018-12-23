@@ -3,6 +3,7 @@ language: C++
 matrix:
   include:
     - name: "Xenial kinetic"
+    - dist: kinetic
     - env: ROS_DISTRO=kinetic
 services:
   - docker
