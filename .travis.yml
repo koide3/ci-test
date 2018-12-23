@@ -1,11 +1,11 @@
 sudo: required
-language: C++
+language: generic
+services:
+  - docker
 matrix:
   include:
     - name: "Xenial kinetic"
     - dist: kinetic
     - env: ROS_DISTRO=kinetic
-services:
-  - docker
 script:
   - docker build -f docker/$ROS_DISTRO/Dockerfile .
